@@ -29,15 +29,13 @@ html, div {
 			margin-right: 1rem;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-
-			a {
-				color: white;
-				transition-duration: 0.3s;
-			}
-			a:hover {
-				color: $purple;
-				text-decoration: none;
-			}
+			color: white;
+			transition-duration: 0.3s;
+			cursor: pointer;
+		}
+		li:hover {
+			color: $purple;
+			text-decoration: none;
 		}
 }
 
@@ -120,6 +118,7 @@ html, div {
 				/* Extra large devices (large laptops and desktops, 1200px and up) */
 				@media only screen and (max-width: 1200px) {
 					width: 80%;
+					height: 80%;
 				}
 	}
 
