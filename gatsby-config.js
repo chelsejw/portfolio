@@ -7,5 +7,5 @@
 module.exports = {
   /* Your site config here */
   plugins: [],
-  pathPrefix: "/chelsejw.github.io"
+  pathPrefix: "/portfolio"
 }
