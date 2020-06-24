@@ -6,6 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
-  pathPrefix: "/portfolio"
+  plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+  ],
+  pathPrefix: "/portfolio",
 }
