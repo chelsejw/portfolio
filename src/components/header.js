@@ -1,19 +1,13 @@
 import React from "react"
 export default function Header(props) {
   return (
-    <div className="header section">
-      <div className="header-left">
+    <div className="header  animate__animated animate__slideInDown">
+      <img className="header-img" src="https://res.cloudinary.com/dwbuqa4dx/image/upload/v1593677535/IMG_4555-5_rczbke.jpg"/>
+      <div className="header-left over">
         <h1>
-          Driven by real-world problems to create tools to simplify manual
-          processes, freeing up time to think about the things that matter.
+          Chelsea Ee
         </h1>
-      </div>
-      <div className="header-right">
-        <img
-          className="headshot"
-          alt="chelsea-headshot"
-          src="https://res.cloudinary.com/dwbuqa4dx/image/upload/v1592989779/headshot_v6chba.jpg"
-        />
+        <p className="title">Software Engineer, ex-television producer</p>
       </div>
     </div>
   )

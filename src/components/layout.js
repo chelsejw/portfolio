@@ -12,12 +12,17 @@ export default function Layout({ children }) {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Chelsea E.</title>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/da6a700eef.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"/>
+
       </Helmet>
       <div id="top"></div>
       <Nav/>
-      <div
-        style={{ margin: `3rem auto`, width: "75%", padding: `0 1rem` }}
-      >
+      <div>
         {children}
       </div>
     </div>

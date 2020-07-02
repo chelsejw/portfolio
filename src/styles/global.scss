@@ -1,31 +1,50 @@
 $purple: #8a4baf;
 $yellow: #4d4c7d;
 
-html {
-	  scroll-behavior: smooth;
+// html {
+// 	  scroll-behavior: smooth;
+// }
+
+// html, div {
+// 	color: white
+// }
+
+// body {
+// 	background-color: black;
+// }
+
+body {
+	background-color: black;
+	font-family: 'Helvetica Neue', sans-serif; 
+	color: white;
 }
 
-html, div {
-	background-color: black;
-	color: white
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+
+p {
+	line-height: 2rem;
 }
 
 .nav {
-	padding: 1.5rem 3rem 2rem 3rem;
+	padding: 1rem 3rem 1rem 3rem;
 	position: sticky;
-	height: 94px;
+	z-index: 9999;
 	top: 0;
-	h3 {
+	background: linear-gradient( rgba(0,0,0,1) 60%, rgba(255,255,255,0) 100%);
+	h2{
 		color: white;
 		display: inline;
 	}
 		ul {
-			float: right;
+			display: inline-block;
 			list-style-type: none;
 		}
 
 		li {
-			display: inline-block;
+			display: inline;
 			margin-right: 1rem;
 			text-transform: uppercase;
 			letter-spacing: 2px;
@@ -40,8 +59,8 @@ html, div {
 }
 
 .section {
-	height: calc(100vh - 94px);
-	padding: 8rem 0;
+	height: calc(100vh - 50px);
+	padding: 8rem 20%;
 		@media only screen and (max-width: 600px) {
 			padding: 0;
 			height: auto;
@@ -49,80 +68,55 @@ html, div {
 
 		/* Medium devices (landscape tablets, 768px and up) */
 		@media only screen and (max-width: 768px) {
-			padding: 5rem 1rem;
+			padding: 5rem 2rem;
 			height: auto;
 		}
 
 		/* Large devices (laptops/desktops, 992px and up) */
 		@media only screen and (max-width: 992px) {
-			padding: 4rem 1rem;
+			padding: 4rem 20%;
 		}
 		/* Extra large devices (large laptops and desktops, 1200px and up) */
 		@media only screen and (min-width: 1200px) {
-			padding: 8rem 0;
+			padding: 8rem 20%;
 		}
 }
-
 
 .header {
-	h1 {
-		color: white;
-		/* Extra small devices (phones, 600px and down) */
-		@media only screen and (max-width: 600px) {
-			font-size: 1.3rem
-		}
-
-		/* Small devices (portrait tablets and large phones, 600px and up) */
-		@media only screen and (min-width: 600px) {
-			font-size: 1.5rem
-		}
-
-		/* Medium devices (landscape tablets, 768px and up) */
-		@media only screen and (min-width: 768px) {
-			font-size: 2rem
-		}
-
-		/* Large devices (laptops/desktops, 992px and up) */
-		@media only screen and (min-width: 992px) {
-			font-size: 2.5rem
-		}
-		/* Extra large devices (large laptops and desktops, 1200px and up) */
-		@media only screen and (min-width: 1200px) {
-			font-size: 3rem
-		}
-
-	}
 	display: flex;
-
-	.header-left {
-		flex: 1;
-		padding: 0 2rem 0 0;
-	}
-
-	.header-right {
-		flex: 1;
-	}
-
-	.headshot {
-		border-radius: 100%;
-		top: 0;
-		right: 0;
-				@media only screen and (max-width: 600px) {
-					width: 100%;
-				}
-				/* Medium devices (landscape tablets, 768px and up) */
-				@media only screen and (max-width: 768px) {
-					width: 90%;
-				}
-
-				/* Extra large devices (large laptops and desktops, 1200px and up) */
-				@media only screen and (max-width: 1200px) {
-					width: 80%;
-					height: 80%;
-				}
-	}
-
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100vh - 94px);	
 }
+
+.header-img {
+	width: 350px;
+	border-radius: 50%;
+	border: 6px solid $purple;
+}
+
+.header-left {
+	padding: 0 20%;
+	text-align: center;
+	h1 {
+		font-size: 4rem;
+		line-height: 1rem;
+		@media only screen and (max-width: 600px) {
+			font-size: 3rem;
+		}
+
+	}
+	.title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+.over{
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)
+   }
 
 .sub-h {
 	color: $purple;

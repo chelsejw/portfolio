@@ -9,7 +9,7 @@ export default function Nav (props) {
     }
     return (
       <div className="nav">
-        <h3>Chelsea E.</h3>
+        <h2>Chelsea E.</h2>
         <ul>
           <li onClick={() => scrollTo("#top")}>Back to Top</li>
           <li onClick={() => scrollTo("#who")}>About</li>
