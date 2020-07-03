@@ -12,6 +12,7 @@ export default function Layout({ children }) {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Chelsea E.</title>
+        <link rel="icon" href="https://res.cloudinary.com/dwbuqa4dx/image/upload/v1593768219/favicon-32x32_jaqtz9.png"/>
         <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
